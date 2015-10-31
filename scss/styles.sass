@@ -1,8 +1,11 @@
 $dkblue: #005774
+$dkbluedes: desaturate($dkblue, 20%)
 $ltblue: #00adef
 $dkgreen: #00a66e
 $ltgreen: #2ab573
 $white: #ffffff
+$grad: linear-gradient(45deg, $dkblue, $dkgreen)
+$webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen)
 $railway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif
 $mensch: 'MenschRegular', sans-serif
 $mont: 'Montserrat', sans-serif
@@ -35,8 +38,8 @@ a:hover, a:focus, a:active
     .header
         text-align: center
         padding: 2% 0 1%
-        background-image: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen)
-        background-image: linear-gradient(45deg, $dkblue, $dkgreen)
+        background-image: $grad
+        background-image: $webkitgrad
         .logo
             max-width: 150px
             margin: 0 auto
@@ -54,7 +57,16 @@ a:hover, a:focus, a:active
                     font-family: $mensch
                     letter-spacing: .1rem
     section
-        padding: 7% 20%
+        padding: 7% 10%
+        text-align: center
+        h2
+            margin: 0 auto
+            padding: 0
+            line-height: 2.5rem
+        .row
+            margin-top: 5%
+        .arrow
+            font-size: 2rem    
     #home
         width: 100%
         padding: 25%
@@ -99,20 +111,28 @@ a:hover, a:focus, a:active
                 text-align: center
                 font-size: .8rem
                 font-style: italic
-    #about
+    #why
         background-color: $ltblue
-        text-align: center
-        h2
-            margin: 0 auto
-            padding: 0
         p
             margin: 30px 0
             padding: 0 10%
             font-size: 1.2rem
-        .arrow
-            font-size: 2rem
-    
-    
-    
-    
-                
+    #what
+        background-image: linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
+        background-image: -webkit-linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        .what-icon span
+            display: block
+            font-size: 7rem
+            color: $ltgreen
+            padding-bottom: 5%
+        h6
+            font-size: 1.25rem
+            min-height: 60px
+        p
+            //text-align: justify
+    #how           
+        background-image: $grad
+        background-image: $webkitgrad
