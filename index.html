@@ -11,6 +11,16 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69529368-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body>
@@ -22,6 +32,7 @@
                     <img src="img/wecount-logo.svg" alt="WeCount Logo">
                 </a>    
             </div>
+<!--
             <nav class="menu">
                 <ul>
                     <a href="#why"><li>Why</li></a>
@@ -31,6 +42,18 @@
                     <a href="#contact"><li>Contact</li></a>
                 </ul>
             </nav>
+-->
+       
+        <nav data-magellan-expedition="fixed" class="menu" style="background:transparent !important">
+          <ul class="sub-nav">
+            <li data-magellan-arrival="why"><a href="#why">Why</a></li>
+            <li data-magellan-arrival="what"><a href="#what">What</a></li>
+            <li data-magellan-arrival="how"><a href="#how">How</a></li>
+            <li data-magellan-arrival="team"><a href="#team">Our Team</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+       
         </div>
         <section id="home">
             <div class="headline">
@@ -47,13 +70,14 @@
             <h2>Why do WeCount?</h2>
             <p>As a society, we are only as safe as our most vulnerable members.<br>The leading cause of poverty and suffering is a lack of personal community support, the failing of the social safety-net that keeps us all from falling between the cracks.</p>
             <p>WeCount is designed to strengthen our social safety-net by helping people connect + support each other with resources and donations within our communities.</p>
-            
+<!--
             <a href="#what" class="arrow">
                 <span class="icon-circle-down">
 				</span>
             </a>
+-->
         </section>
-        <section id="what" data-magellan-arrival="what">
+        <section id="what">
             <h2>WeCount connects you or someone you know with available local resources</h2>   
             <div class="row">
                 <div class="large-4 columns">
@@ -83,13 +107,22 @@ individual without access a to a phone or computer. After someone completes our 
                     <p>WeCount works closely with the local, regional and federally-directed agencies, faith-based and community organizations. WeCount provides  consistently accurate listing of local resources, their contact information, as well as their eligibility and availability.</p>
                 </div>
             </div>  
+<!--
             <a href="#how" class="arrow">
                 <span class="icon-circle-down">
 				</span>
             </a>   
+-->
         </section>
         <section id="how">
-            
+            <h2>How WeCount Works</h2>
+            <div class="how-info">
+                <img src="img/how.png" alt="How WeCount Works">
+            </div>
+            <div class="signup">
+                <p>Sign up NOW to receive updates on our project or to join our beta testing in January 2016!</p>
+                <a href="#" class="signup-btn"><h6>Email Me</h6></a>
+            </div>
         </section>
         <section id="team">
             

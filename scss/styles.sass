@@ -5,6 +5,7 @@ $dkgreen: #00a66e
 $ltgreen: #2ab573
 $white: #ffffff
 $grad: linear-gradient(45deg, $dkblue, $dkgreen)
+$border: 3px solid $white
 $webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen)
 $railway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif
 $mensch: 'MenschRegular', sans-serif
@@ -136,3 +137,38 @@ a:hover, a:focus, a:active
     #how           
         background-image: $grad
         background-image: $webkitgrad
+        .how-info
+            margin: 5% 0
+        .signup
+            background-color: $ltgreen
+            width: 100% !important
+            padding: 5%
+            position: absolute
+            margin: 5% auto
+            text-align: center
+            left: 0
+            p
+                font-size: 1.25rem
+                font-weight: bold
+                margin-bottom: 2%
+            a
+                background-color: $white
+                padding: 15px 30px
+                border: $border
+                display: inline-block
+                transition: .2s all
+                -webkit-transition: .2s all    
+                h6
+                    color: $ltgreen
+                    margin: 0
+                    padding: 0
+                    font-size: 2rem
+                &:hover
+                    background-color: $ltblue
+                    h6
+                        color: $white
+            
+            
+            
+            
+            
