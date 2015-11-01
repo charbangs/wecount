@@ -44,8 +44,8 @@
             </nav>
 -->
        
-        <nav data-magellan-expedition="fixed" class="menu" style="background:transparent !important">
-          <ul class="sub-nav">
+        <nav data-magellan-expedition="scroll" class="menu" style="background:transparent !important">
+          <ul>
             <li data-magellan-arrival="why"><a href="#why">Why</a></li>
             <li data-magellan-arrival="what"><a href="#what">What</a></li>
             <li data-magellan-arrival="how"><a href="#how">How</a></li>
@@ -134,6 +134,20 @@ individual without access a to a phone or computer. After someone completes our 
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="js/app.js"></script>
+    
+    <script>
+        $(document).foundation({
+            "magellan-expedition": {
+              active_class: 'active', // specify the class used for active sections
+              threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+              destination_threshold: 0, // pixels from the top of destination for it to be considered active
+              throttle_delay: 50, // calculation throttling to increase framerate
+              fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
+              offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
+            }
+        });  
+      
+    </script>
   </body>
 
 </html>
