@@ -15,11 +15,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?r5nzw');
-	src:url('fonts/icomoon.eot?r5nzw#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?r5nzw') format('truetype'),
-		url('fonts/icomoon.woff?r5nzw') format('woff'),
-		url('fonts/icomoon.svg?r5nzw#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?3drd1l');
+	src:url('fonts/icomoon.eot?3drd1l#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?3drd1l') format('truetype'),
+		url('fonts/icomoon.woff?3drd1l') format('woff'),
+		url('fonts/icomoon.svg?3drd1l#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -38,6 +38,21 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail:before {
+	content: "\e908";
+}
+.icon-linkedin:before {
+	content: "\e909";
+}
+.icon-facebook:before {
+	content: "\e90a";
+}
+.icon-twitter:before {
+	content: "\e90b";
+}
+.icon-mail2:before {
+	content: "\e90c";
+}
 .icon-answer:before {
 	content: "\e900";
 }
@@ -61,7 +76,4 @@
 }
 .icon-seek-services:before {
 	content: "\e907";
-}
-.icon-circle-down:before {
-	content: "\e908";
 }

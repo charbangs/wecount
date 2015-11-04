@@ -1,5 +1,5 @@
 $dkblue: #005774
-$dkbluedes: desaturate($dkblue, 20%)
+$dkbluedes: desaturate($dkblue, 80%)
 $ltblue: #00adef
 $dkgreen: #00a66e
 $ltgreen: #2ab573
@@ -7,28 +7,32 @@ $white: #ffffff
 $grad: linear-gradient(45deg, $dkblue, $dkgreen)
 $border: 3px solid $white
 $webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen)
-$railway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif
-$mensch: 'MenschRegular', sans-serif
-$mont: 'Montserrat', sans-serif
+$raleway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif
+//$mensch: 'MenschRegular', sans-serif
+$mensch: 'Marvel', sans-serif
+//$mont: 'Montserrat', sans-serif
+$mont: 'Marvel', sans-serif
 $icons: 'Material Icons'
 
 body
     background-color: $dkblue
     color: $white
-    font-family: $railway
+    font-family: $raleway
     font-weight: lighter
 
 h1, h2, h3, h4, h5, h6
     color: $white
     text-transform: uppercase
-h1, h6
-    font-family: $mont
-h2, h3, h4, h5
+h6
+    font-family: $raleway
+    font-weight: 700
+h1, h2, h3, h4, h5
     font-family: $mensch
     
 a, a:visited
     color: $white
     text-decoration: none
+    transition: all .15s
 
 a:hover, a:focus, a:active
     color: lighten( $ltblue, 25% )
@@ -88,14 +92,15 @@ a:hover, a:focus, a:active
         width: 100%
         padding: 25%
         position: relative
-        background: url(../img/home.jpg) top center no-repeat
+        background-image: linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .45)), url(../img/home.jpg)
+        background-image: -webkit-linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .45)), url(../img/home.jpg)
         background-size: cover
         background-attachment: fixed
         //min-height: 650px
         .headline
             position: absolute
             width: 100%
-            padding: 0 10%
+            padding: 0 25%
             top: 50%
             left: 50%
             transform: translate(-50%,-50%)
@@ -103,21 +108,20 @@ a:hover, a:focus, a:active
             h1
                 text-align: center
                 padding: 1%
-                background-color: rgba($ltblue, .6)
-                font-size: 3.5rem
+                background-color: rgba($ltblue, .7)
+                font-size: 4rem
             a 
-                border-radius: 25px
                 margin-top: 10px
                 float: right
                 padding: 2%
-                background-color: rgba($ltgreen, .6)
+                background-color: rgba($ltgreen, .7)
                 text-align: center
-                transition: background-color .2s
-                -webkit-transition: background-color .2s
+                border: $border
                 &:hover
                     background-color: $ltgreen
                 h6
                     margin: 0
+                    font-size: 1.25rem
         .caption
             position: absolute
             bottom: 10px
@@ -140,6 +144,10 @@ a:hover, a:focus, a:active
         background-size: cover
         background-position: center
         background-attachment: fixed
+        h2, .subhead
+            margin-bottom: 1%
+        .subhead
+            font-size: 1.35rem
         .what-icon span
             display: block
             font-size: 7rem
@@ -155,36 +163,67 @@ a:hover, a:focus, a:active
         background-image: $webkitgrad
         .how-info
             margin: 5% 0
-        .signup
+    .signup
+        background-color: $ltgreen
+        width: 100% !important
+        padding: 5%
+        //position: absolute
+        //margin: 5% auto
+        text-align: center
+        left: 0
+        p
+            font-size: 1.35rem
+            margin-bottom: 2%
+        a
             background-color: $ltgreen
-            width: 100% !important
-            padding: 5%
-            position: absolute
-            margin: 5% auto
-            text-align: center
-            left: 0
-            p
-                font-size: 1.25rem
-                font-weight: bold
-                margin-bottom: 2%
-            a
+            padding: 15px 30px
+            border: $border
+            display: inline-block
+            h6
+                color: $white
+                margin: 0
+                padding: 0
+                font-size: 2rem
+            &:hover
                 background-color: $white
-                padding: 15px 30px
-                border: $border
-                display: inline-block
-                transition: .2s all
-                -webkit-transition: .2s all    
                 h6
                     color: $ltgreen
+            
+            
+    #team
+        background-image: $grad
+        background-image: $webkitgrad
+        .row
+            background: linear-gradient($dkbluedes,rgba($dkbluedes, .65))
+            background: -webkit-linear-gradient($dkbluedes,rgba($dkbluedes, .65))
+            .columns
+                padding-left: 0
+                padding-right: 0
+                text-align: left
+            h6
+                font-size: 1.65rem
+                margin-bottom: 5%
+                //background: $dkbluedes
+                //padding: 5% 10%
+            .bio    
+                padding: 5%
+                .bio-social
                     margin: 0
-                    padding: 0
-                    font-size: 2rem
-                &:hover
-                    background-color: $ltblue
-                    h6
-                        color: $white
-            
-            
-            
-            
-            
+                    padding: 3% 0 0
+                    display: table
+                    width: 100%   
+                    border-top: 1px dashed $white
+                    li
+                        display: inline-block
+                        padding: 1% 3%
+                        margin: 0 1%
+                        a
+                            font-size: 1.5rem
+                    li:first-child
+                        padding-left: 0
+                        margin-left: 0    
+                        
+                        
+                        
+                        
+                        
