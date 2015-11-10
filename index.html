@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <link rel="stylesheet" href="stylesheets/fonts.css" />
+    <link rel="stylesheet" href="stylesheets/contact.css" />
 <!--   <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>-->
     <link href='https://fonts.googleapis.com/css?family=Raleway:300,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Marvel:700' rel='stylesheet' type='text/css'>
@@ -30,7 +31,7 @@
         <div class="header">
             <div class="logo">
                 <a href="#home">
-                    <img src="img/wecount-logo.svg" alt="WeCount Logo">
+                    <img src="img/wecount-logo-full-circle.svg" alt="WeCount Logo">
                 </a>    
             </div>
 <!--
@@ -51,7 +52,7 @@
             <li data-magellan-arrival="what"><a href="#what">What</a></li>
             <li data-magellan-arrival="how"><a href="#how">How</a></li>
             <li data-magellan-arrival="team"><a href="#team">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" data-reveal-id="contact-container">Contact</a></li>
           </ul>
         </nav>
        
@@ -63,9 +64,13 @@
                     <h6>Yes, I count! Sign Me Up</h6>
                 </a>
             </div>
+            
+<!--
             <div class="caption">
                     <p>Jenn and her daughter Willow lived homeless in an RV, but afterward secured supportive housing.<br>If you have the chance to meet them you’ll see that they are pure LOVE.</p>
             </div>
+-->
+            
         </section>
         <section id="why">
             <h2>Why do WeCount?</h2>
@@ -239,6 +244,88 @@ individual without access to a phone or computer. After someone completes our qu
                 </div>
             </div>
         </section>
+        
+<!--contact form-->
+
+        <div id="contact-container" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Get it touch</h2>
+            <p class="lead">Ask us a question, give an idea, strike up a convo</p>
+<!--
+            <form action="">
+                <row>
+                    <div class="small-12 medium-6 columns">
+                        <label class="right inline">><span>First Name</span>
+                            <input type="text" placeholder="First Name">
+                        </label>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <label class="right inline">><span>Last Name</span>
+                            <input type="text" placeholder="Last Name">
+                        </label>
+                    </div>
+                </row>
+                <row>
+                    <div class="small-12 columns">
+                        <label class="right inline">><span>Email Address</span>
+                            <input type="text" placeholder="email@example.come">
+                        </label>
+                    </div>
+                    <div class="small-12 columns">
+                        <label class="right inline">><span>I am interested in</span></label>
+                            <input type="radio" name="interest" value="giving-help" id="giving-help">
+                                <label for="giving-help">Giving Help</label>
+                            <input type="radio" name="interest" value="receiving-help" id="receiving-help">
+                                <label for="receiving-help">Receiving Help</label>
+                    </div>
+                    <div class="small-12 columns">
+                        <label class="right inline">><span>Message</span>
+                            <textarea name="message" rows="10"></textarea>
+                        </label>
+                    </div>
+                </row>
+            </form>
+-->     
+         
+          <form action="">
+                <row>
+                    <div class="small-12 columns">
+                       <div class="row">
+                           <div class="small-2 columns"><label for="name" class="right inline">Full Name</label></div>
+                           <div class="small-10 columns"><input type="text" id="name" placeholder="Full Name"></div>
+                        </div>   
+                        <div class="row">
+                           <div class="small-2 columns"><label for="email" class="right inline">Email Address</label></div>
+                           <div class="small-10 columns"><input type="text" id="email" placeholder="email@example.com"></div>
+                        </div>    
+                        <div class="row">
+                           <div class="small-2 columns"><label for="interest" class="right inline">I'm intersted in</label></div>
+                           <div class="small-10 columns radio-btn">
+                              <input type="radio" name="giving-help" value="giving-help" id="giving-help">
+                              <label for="giving-help" class="right inline">Giving Help</label> 
+                              <input type="radio" name="receiving-help" value="receiving-help" id="receiving-help">
+                              <label for="receiving-help" class="right inline">Receiving Help</label> 
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-2 columns">
+                                <label for="message" class="right-inline">Your Message</label>
+                            </div>
+                            <div class="small-10 columns">
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-3 medium-push-9 columns submit-btn">
+                                <button class="submit" type="submit" value="Submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </row>
+            </form>
+          
+          
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
         
     </div>
 

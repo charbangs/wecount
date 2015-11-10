@@ -1,0 +1,42 @@
+@import "settings"
+
+#contact-container
+    text-align: center
+    position: fixed
+    .lead
+        margin-bottom: 3rem
+form
+    label
+        font: 1.25rem $marvel
+        text-transform: uppercase
+        margin-bottom: 2.5rem
+        letter-spacing: .05rem
+        color: lighten($dkblue, 55%)
+        text-align: right
+    .radio-btn
+        text-align: left
+        label
+            font-family: $raleway !important
+            color: $white !important
+  
+input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea
+    height: 3rem
+    padding: 1rem
+
+label.inline
+    padding: 1rem 0
+.submit-btn
+    text-align: right    
+    margin-top: 1rem
+    button
+        background-color: $ltgreen
+        border: $border
+        font: 1.25rem $raleway
+        font-weight: 700
+        text-transform: uppercase
+        transition: all .15s
+        -webkit-transition: all .15s
+        &:hover
+            background-color: $white
+            color: $ltgreen
+    

@@ -1,19 +1,5 @@
-$dkblue: #005774
-$dkbluedes: desaturate($dkblue, 80%)
-$ltblue: #00adef
-$dkgreen: #00a66e
-$ltgreen: #2ab573
-$white: #ffffff
-$grad: linear-gradient(45deg, $dkblue, $dkgreen)
-$border: 3px solid $white
-$webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen)
-$raleway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif
-//$mensch: 'MenschRegular', sans-serif
-$mensch: 'Marvel', sans-serif
-//$mont: 'Montserrat', sans-serif
-$mont: 'Marvel', sans-serif
-$icons: 'Material Icons'
-
+@import "settings"
+    
 body
     background-color: $dkblue
     color: $white
@@ -27,12 +13,13 @@ h6
     font-family: $raleway
     font-weight: 700
 h1, h2, h3, h4, h5
-    font-family: $mensch
+    font-family: $marvel
     
 a, a:visited
     color: $white
     text-decoration: none
     transition: all .15s
+    -webkit-transition: all .15s
 
 a:hover, a:focus, a:active
     color: lighten( $ltblue, 25% )
@@ -75,7 +62,7 @@ a:hover, a:focus, a:active
                         padding: 5px 15px
                         margin: 0 10px
                         text-transform: uppercase
-                        font-family: $mensch
+                        font-family: $marvel
                         letter-spacing: .1rem
     section
         padding: 7% 10%
@@ -142,7 +129,7 @@ a:hover, a:focus, a:active
         background-image: linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
         background-image: -webkit-linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
         background-size: cover
-        background-position: center
+        background-position: top center
         background-attachment: fixed
         h2, .subhead
             margin-bottom: 1%
@@ -223,7 +210,7 @@ a:hover, a:focus, a:active
                         padding-left: 0
                         margin-left: 0    
                         
-                        
+
                         
                         
                         

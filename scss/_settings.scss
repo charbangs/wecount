@@ -48,6 +48,26 @@
 // 34. Top Bar
 // 36. Visibility Classes
 
+
+// Char Styles!
+
+$dkblue: #005774;
+$dkbluedes: desaturate($dkblue, 80%);
+$ltblue: #00adef;
+$dkgreen: #00a66e;
+$ltgreen: #2ab573;
+$white: #ffffff;
+$grad: linear-gradient(45deg, $dkblue, $dkgreen);
+$border: 3px solid $white;
+$webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen);
+$raleway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+//$mensch: 'MenschRegular', sans-serif
+$marvel: 'Marvel', sans-serif;
+//$mont: 'Montserrat', sans-serif
+//$mont: 'Marvel', sans-serif;
+$icons: 'Material Icons';
+
+
 // a. Base
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -1126,25 +1146,26 @@ $include-html-global-classes: $include-html-classes;
 // 25. Reveal
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-reveal-classes: $include-html-classes;
+$include-html-reveal-classes: $include-html-classes;
 
 // We use these to control the style of the reveal overlay.
-// $reveal-overlay-bg: rgba($black, .45);
-// $reveal-overlay-bg-old: $black;
+$reveal-overlay-bg: rgba($dkblue, .75);
+$reveal-overlay-bg-old: $dkblue;
 
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: $white;
+//$reveal-modal-bg: rgba($dkblue, .85);
+$reveal-modal-bg: rgba($dkblue, .75);
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
-// $reveal-modal-padding: rem-calc(20);
-// $reveal-box-shadow: 0 0 10px rgba($black,.4);
+$reveal-modal-padding: 5rem;
+$reveal-box-shadow: 0;
 
 // We use these to style the reveal close button
-// $reveal-close-font-size: rem-calc(40);
+$reveal-close-font-size: rem-calc(80);
 // $reveal-close-top: rem-calc(10);
 // $reveal-close-side: rem-calc(22);
-// $reveal-close-color: $base;
+$reveal-close-color: $white;
 // $reveal-close-weight: $font-weight-bold;
 
 // We use this to set the default radius used throughout the core.
@@ -1152,9 +1173,9 @@ $include-html-global-classes: $include-html-classes;
 // $reveal-round: $global-rounded;
 
 // We use these to control the modal border
-// $reveal-border-style: solid;
-// $reveal-border-width: 1px;
-// $reveal-border-color: $steel;
+$reveal-border-style: 0;
+$reveal-border-width: 0;
+//$reveal-border-color: $steel;
 
 // $reveal-modal-class: "reveal-modal";
 // $close-reveal-modal-class: "close-reveal-modal";
