@@ -145,11 +145,27 @@ a:hover, a:focus, a:active
             min-height: 60px
         p
             //text-align: justify
-    #how           
+    #how-old, #how           
         background-image: $grad
         background-image: $webkitgrad
         .how-info
             margin: 5% 0
+        .how-row
+            width: 100%
+            display: table
+        .how-col
+            display: inline-block
+            width: 18%
+            padding: 1%
+            vertical-align: top
+            span
+                margin-top: 4rem
+                display: block
+                font-size: 7rem
+                min-height: 120px
+            p    
+                margin-top: 20px
+                
     .signup
         background-color: $ltgreen
         width: 100% !important
@@ -181,17 +197,31 @@ a:hover, a:focus, a:active
         background-image: $grad
         background-image: $webkitgrad
         .row
-            background: linear-gradient($dkbluedes,rgba($dkbluedes, .65))
-            background: -webkit-linear-gradient($dkbluedes,rgba($dkbluedes, .65))
+            //background: linear-gradient($dkbluedes,rgba($dkbluedes, .65))
+            //background: -webkit-linear-gradient($dkbluedes,rgba($dkbluedes, .65))
             .columns
-                padding-left: 0
-                padding-right: 0
-                text-align: left
-            h6
-                font-size: 1.65rem
-                margin-bottom: 5%
-                //background: $dkbluedes
-                //padding: 5% 10%
+                //padding-left: 0
+                //padding-right: 0
+                //text-align: left
+            .team-member
+                display: table
+                width: 100%
+                h6
+                    //font-size: 1.65rem
+                    font-size: .9rem
+                    display: inline-block
+                    //margin-bottom: 5%
+                    margin-bottom: 5%
+                    line-height: 2rem
+                a
+                    display: inline-block
+                    margin-left: 5%
+                    font-size: 1.35rem
+                    line-height: 2rem
+                    color: lighten($ltblue, 10%)
+                    vertical-align: middle
+                    &:hover
+                        color: $ltblue
             .bio    
                 padding: 5%
                 .bio-social
@@ -209,7 +239,19 @@ a:hover, a:focus, a:active
                     li:first-child
                         padding-left: 0
                         margin-left: 0    
-                        
+    #footer-container
+        background: $dkblue
+        padding: 2% 10%
+        footer
+            display: table
+            width: 100%
+            img
+                display: inline-block
+                max-width: 50px
+                margin-right: 2rem
+            p
+                margin-bottom: 0
+                display: inline-block
 
                         
                         
