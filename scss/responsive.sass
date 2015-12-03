@@ -1,0 +1,33 @@
+@import "settings"
+
+@media screen and (max-width: 1120px)
+    .container 
+        .header .logo
+            max-width: 120px
+        #home .headline 
+            padding: 0 15%
+            h1
+                font-size: 3rem
+
+@media screen and (max-width: 745px)
+    .container
+        #home
+            background-position: center
+            padding: 35%
+            .headline a h6
+                float: none
+                width: 100%
+                margin: 20px auto
+                padding: 2%
+                background-color: rgba($ltgreen, .7)
+                text-align: center
+                border: $border
+
+@media screen and (max-width: 538px)
+    [data-magellan-expedition], [data-magellan-expedition-clone]
+        width: 33.33%
+    .container
+        #home
+            padding: 50%    
+        section
+            padding: 10% 5%
