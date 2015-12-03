@@ -8,6 +8,12 @@
             padding: 0 15%
             h1
                 font-size: 3rem
+        #how
+            padding: 7% 2%
+            
+@media screen and (max-width: 1015px)
+    .container #how .how-col
+        width: 40%
 
 @media screen and (max-width: 745px)
     .container
@@ -22,12 +28,23 @@
                 background-color: rgba($ltgreen, .7)
                 text-align: center
                 border: $border
-
+        .signup
+            padding: 10%
+            p
+                font-size: 1.25rem
+                margin-bottom: 7%
+    
 @media screen and (max-width: 538px)
     [data-magellan-expedition], [data-magellan-expedition-clone]
         width: 33.33%
     .container
-        #home
-            padding: 50%    
         section
             padding: 10% 5%
+        #home
+            padding: 50%   
+        #how .how-col
+            width: 100%
+        #footer-container footer img
+            display: block
+            margin: 15px auto
+        
