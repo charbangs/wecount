@@ -40,7 +40,7 @@
         <nav data-magellan-expedition="scroll" class="menu" style="background:transparent !important">
           <ul>
             <li data-magellan-arrival="why"><a href="#why">Why</a></li>
-            <li data-magellan-arrival="what"><a href="#what">What</a></li>
+<!--            <li data-magellan-arrival="what"><a href="#what">What</a></li>-->
             <li data-magellan-arrival="how"><a href="#how">How</a></li>
             <li data-magellan-arrival="team"><a href="#team">Our Team</a></li>
             <li><a href="#" data-reveal-id="contact-container">Contact</a></li>
@@ -51,19 +51,20 @@
         <section id="home">
             <div class="headline">
                 <h1>Want to find out why WeCount?</h1>
-                <a href="#">
+                <a href="#" data-reveal-id="contact-container">
                     <h6>Yes, I count! Sign Me Up</h6>
                 </a>
             </div>
             
         </section>
         <section id="why">
-            <h2>Why do WeCount?</h2>
-            <p>As a society, we are only as safe as our most vulnerable members. 
-The leading cause of poverty and suffering is a lack of personal community support, the failing of the social safety-net that keeps us all from falling between the cracks. </p>
-            <p>WeCount helps communities succeed together.</p>
-
+            <!--<h2>Why do WeCount?</h2>-->
+            <img src="img/house-icon.png" alt="Why do we count?" class="house-icon">
+            <p>WeCount isn’t just about getting someone the sleeping bag they need, but also the coffee maker that helps them wake up, keep their job, and stay housed.</p>
+            <img src="img/why-img.jpg" alt="man and child photo" class="why-img">
+            <p>As a society, we are only as  safe as our most vulnerable members. A leading cause of poverty and suffering is a lack of personal community support, the failing of the social safety net that keeps us all from falling between the cracks.</p>
         </section>
+<!--
         <section id="what">
             <h2>What Role Does WeCount Play?</h2>
             <p class="subhead">WeCount connects you or someone you know with available local resources</p>
@@ -95,8 +96,20 @@ The leading cause of poverty and suffering is a lack of personal community suppo
             </div>  
 
         </section>
+-->
         <section id="how">
-            <h2>How Does WeCount Work?</h2>
+            <h2>How It Works</h2>
+            <div class="how-infographic">
+                <img src="img/how-it-works.png" alt="How it works infographic">
+                <div class="row">
+                    <div class="small-2 columns"><img src="img/contact-icon.png" alt="contact method"></div>
+                    <div class="small-4 columns">All that’s required to start using WeCount is a confirmed form of contact—either an email or text-enabled phone number</div>
+                    <div class="small-2 columns"><img src="img/check-icon.png" alt="seek help or donate"></div>
+                    <div class="small-4 columns">After creating an account, users can choose to seek help or donate</div>
+                </div>
+            </div>
+            
+<!--
             <div class="how-row">
                 <div class="how-col">
                     <span class="icon-connect"></span>
@@ -119,12 +132,13 @@ The leading cause of poverty and suffering is a lack of personal community suppo
                     <p>Or donate directly through Wecount!</p>
                 </div>
             </div>
+-->
         </section>
         
         
         <div class="signup">
-                <p>Sign up NOW to receive updates on our project or to join our beta testing in January 2016!</p>
-                <a href="#" class="signup-btn"><h6>Email Me</h6></a>
+                <p>WeCount helps communities succeed together.<br>Sign up now to receive updates on our product launch in early 2016.</p>
+                <a href="#" data-reveal-id="contact-container" class="signup-btn"><h6>Email Me</h6></a>
         </div>
         <section id="team">
             <h2>Meet Our Team</h2>
@@ -139,7 +153,7 @@ The leading cause of poverty and suffering is a lack of personal community suppo
                <div class="small-12 large-3 columns">
                     <div class="team-member">
                         <h6>Graham Pruss</h6>
-                        <a href="mailto:grahampruss%40wecount.org" title="Email Graham"><span class="icon-mail"></span></a>   
+                        <a href="mailto:graham%40wecount.org" title="Email Graham"><span class="icon-mail"></span></a>   
                     </div>                   
                     <img src="img/graham.jpg" alt="Graham">
                </div>
@@ -163,7 +177,7 @@ The leading cause of poverty and suffering is a lack of personal community suppo
         <section id="footer-container">
             <footer>
                 <img src="img/wecount-logomark.svg" alt="WeCount logomark">
-                <p>&copy; WeCount 2015 &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; <a href="mailto:info%40wecount.org" title="Contact Us">Contact Us</a></p>
+                <p>&copy; WeCount 2016 &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; <a href="#" data-reveal-id="contact-container" title="Contact Us">Contact Us</a></p>
             </footer>
         </section>
         
@@ -239,6 +253,9 @@ The leading cause of poverty and suffering is a lack of personal community suppo
         });  
       
     </script>
+     <!-- typekit -->
+    <script src="https://use.typekit.net/hyv4hha.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 
 </html>

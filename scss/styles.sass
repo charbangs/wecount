@@ -3,17 +3,21 @@
 body
     background-color: $dkblue
     color: $white
-    font-family: $raleway
-    font-weight: lighter
+    font-family: $brandon
+    font-weight: 400
+    font-size: 22px
 
 h1, h2, h3, h4, h5, h6
     color: $white
+    font-family: $brandon
     text-transform: uppercase
-h6
-    font-family: $raleway
     font-weight: 700
-h1, h2, h3, h4, h5
-    font-family: $marvel
+    
+h5
+    line-height: 2rem
+
+p    
+    font-size: inherit
     
 a, a:visited
     color: $white
@@ -62,7 +66,7 @@ a:hover, a:focus, a:active
                         padding: 5px 15px
                         margin: 0 10px
                         text-transform: uppercase
-                        font-family: $marvel
+                        font-family: $brandon
                         letter-spacing: .1rem
     section
         padding: 7% 10%
@@ -70,7 +74,8 @@ a:hover, a:focus, a:active
         h2
             margin: 0 auto
             padding: 0
-            line-height: 2.5rem
+            line-height: 3.5rem
+            font-size: 4rem
         .row
             margin-top: 5%
         .arrow
@@ -96,7 +101,8 @@ a:hover, a:focus, a:active
                 text-align: center
                 padding: 1%
                 background-color: rgba($ltblue, .7)
-                font-size: 4rem
+                font-size: 4.5rem
+                line-height: 4.2rem
             a 
                 margin-top: 10px
                 &:hover
@@ -109,22 +115,18 @@ a:hover, a:focus, a:active
                     border: $border
                     margin: 0
                     font-size: 1.25rem
-        .caption
-            position: absolute
-            bottom: 10px
-            left: 50%
-            transform: translate(-50%,0)
-            -webkit-transform: translate(-50%,0)
-            p
-                text-align: center
-                font-size: .8rem
-                font-style: italic
     #why
         background-color: $ltblue
-        p
+        .house-icon
+            max-width: 300px
+            margin: 20px 0
+        p, h5
             margin: 30px 0
-            padding: 0 10%
-            font-size: 1.2rem
+            padding: 0 15%
+        .why-img
+            max-width: 700px
+            margin: 30px 0
+    //delete all this feb-15
     #what
         background-image: linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
         background-image: -webkit-linear-gradient(rgba($dkbluedes, .85),rgba($dkbluedes, .85)), url(../img/what.jpg)
@@ -146,25 +148,18 @@ a:hover, a:focus, a:active
         p
             //text-align: justify
     #how-old, #how           
-        background-image: $grad
-        background-image: $webkitgrad
-        .how-info
+        background-color: $white
+        h2
+            color: $ltblue
+        .how-infographic
+            background-color: $ltblue
             margin: 5% 0
-        .how-row
-            width: 100%
-            display: table
-        .how-col
-            display: inline-block
-            width: 18%
-            padding: 1%
-            vertical-align: top
-            span
-                margin-top: 4rem
-                display: block
-                font-size: 7rem
-                min-height: 120px
-            p    
-                margin-top: 20px
+            padding: 30px
+            &:after 
+        .row
+            margin: 2% 0
+        .columns
+            text-align: left
                 
     .signup
         background-color: $ltgreen
@@ -175,8 +170,7 @@ a:hover, a:focus, a:active
         text-align: center
         left: 0
         p
-            font-size: 1.35rem
-            margin-bottom: 2%
+            margin-bottom: 3%
         a
             background-color: $ltgreen
             padding: 15px 30px
@@ -222,6 +216,9 @@ a:hover, a:focus, a:active
                     vertical-align: middle
                     &:hover
                         color: $ltblue
+            img
+                border-radius: 100%
+                border: $border
             .bio    
                 padding: 5%
                 .bio-social
