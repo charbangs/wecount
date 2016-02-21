@@ -170,19 +170,22 @@ a:hover, a:focus, a:active
                 text-align: left
         .help-donate-row
             margin-top: -5px
-            .seek-help-col
-                background: #2e4046 url(../img/seek-help-bg.jpg) no-repeat
+            .seek-help-col, .donate-col
                 background-size: cover
+                padding: 0
+                width: 49%
                 h3
-                    background: $ltgreen
                     padding: 20px
-                .seek-help-ul
-                    margin-left: 0
+                    margin-top: 0
+                p, .seek-help-ul, .donate-ul
+                    margin: 0
+                    padding: 10px
+                .seek-help-ul, .donate-ul
                     list-style: none
                     li
-                        background-color: rgba($ltgreen, 0.7)
                         padding: 10px
                         margin: 10px 0
+                        height: 100px
                         img
                             float: left
                             clear: both
@@ -190,15 +193,34 @@ a:hover, a:focus, a:active
                             margin: 0 35px 0 15px
                         h4
                             text-align: left
-                            line-height: 70px
+            .seek-help-col
+                background: #2e4046 url(../img/seek-help-bg.jpg) no-repeat        
+                h3
+                    background: $ltgreen
+                .seek-help-ul
+                    li
+                        background-color: rgba($ltgreen, 0.7)
+                        h4
+                            margin-top: 5%
             .donate-col
+                background: #2e4046 url(../img/donate-bg.jpg) no-repeat
                 h3
                     background-color: $ltblue
-                    padding: 20px
                 .donate-ul
-                    margin-left: 0
-                    list-style: none
-                
+                    li
+                        background-color: rgba($ltblue, 0.7)    
+                        h4
+                            margin-top: 2%
+                p
+                    padding: 0 5px
+                hr
+                    width: 80%
+                    margin: 27px auto
+                h5
+                    line-height: 2rem
+                    padding: 0 40px
+                    margin: 35px 0
+                    
     .signup
         background-color: $ltgreen
         width: 100% !important

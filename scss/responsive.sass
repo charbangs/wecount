@@ -1,5 +1,11 @@
 @import "settings"
 
+@media screen and (max-width:1245px)
+    .donate-ul li
+        h4
+            font-size: 1.2rem
+            margin-top: 3.5% !important
+
 @media screen and (max-width: 1120px)
     .container 
         .header .logo
@@ -9,13 +15,20 @@
             h1
                 font-size: 3rem
         #how
-            padding: 7% 2%
+            padding: 7% 4%
             .how-it-works-row .how-icon
                 width: 130px
                 margin-bottom: 20px
                 float: none
                 clear: none
                 padding-right: 0
+            .help-donate-row
+                .seek-help-col, .donate-col
+                    width: 100%
+                    p, .seek-help-ul, .donate-ul
+                        padding: 10px 20%
+                        margin-bottom: 20px
+                    
             
 @media screen and (max-width: 1015px)
     .container #how .how-col
@@ -40,9 +53,13 @@
         #how
             .how-it-works-row .columns
                 width: 100%
-                padding: 5% 20%
+                padding: 5% 10%
                 p
                     text-align: center
+            .help-donate-row
+                .seek-help-col, .donate-col
+                    .seek-help-ul, .donate-ul
+                        padding: 10px 10%
                 
         .signup
             padding: 10%
@@ -57,12 +74,13 @@
         section
             padding: 10% 5%
         #home
-            padding: 50% 
+            padding: 50%
         #why .house-icon
             max-width: 200px
-        #how .how-col
-            width: 100%
+        #how
+            .donate-ul li h4
+                font-size: .95rem
         #footer-container footer img
             display: block
             margin: 15px auto
-        
+       
