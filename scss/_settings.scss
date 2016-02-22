@@ -57,9 +57,10 @@ $ltblue: #00adef;
 $dkgreen: #00a66e;
 $ltgreen: #2ab573;
 $white: #ffffff;
-$grad: linear-gradient(45deg, $dkblue, $dkgreen);
+$yellow: #e4e041;
+$grad: linear-gradient(45deg, $dkgreen, $dkblue);
 $border: 3px solid $white;
-$webkitgrad: -webkit-linear-gradient(bottom left, $dkblue, $dkgreen);
+$webkitgrad: -webkit-linear-gradient(bottom left, $dkgreen, $dkblue);
 $raleway: 'Raleway', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $brandon: 'brandon-grotesque', 'Brandon Grotesque', 'Arial Rounded MT', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 //$mensch: 'MenschRegular', sans-serif

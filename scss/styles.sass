@@ -220,9 +220,17 @@ a:hover, a:focus, a:active
                     line-height: 2rem
                     padding: 0 40px
                     margin: 35px 0
+        .donate-info
+            background-color: $ltblue
+            margin-top: 0
+            padding: 7%
+            hr
+                width: 80%
+                margin: 3% auto
                     
     .signup
-        background-color: $ltgreen
+        background-image: $grad
+        background-image: $webkitgrad
         width: 100% !important
         padding: 5%
         //position: absolute
@@ -233,14 +241,14 @@ a:hover, a:focus, a:active
             margin-bottom: 3%
         a
             background-color: $ltgreen
-            padding: 15px 30px
+            padding: 10px 30px
             border: $border
             display: inline-block
             h6
                 color: $white
                 margin: 0
                 padding: 0
-                font-size: 2rem
+                font-size: 1.8rem
             &:hover
                 background-color: $white
                 h6
@@ -248,8 +256,7 @@ a:hover, a:focus, a:active
             
             
     #team
-        background-image: $grad
-        background-image: $webkitgrad
+        background-color: $ltblue
         .row
             //background: linear-gradient($dkbluedes,rgba($dkbluedes, .65))
             //background: -webkit-linear-gradient($dkbluedes,rgba($dkbluedes, .65))
@@ -257,25 +264,12 @@ a:hover, a:focus, a:active
                 //padding-left: 0
                 //padding-right: 0
                 //text-align: left
-            .team-member
-                display: table
-                width: 100%
-                h6
-                    //font-size: 1.65rem
-                    font-size: .9rem
-                    display: inline-block
-                    //margin-bottom: 5%
-                    margin-bottom: 5%
-                    line-height: 2rem
-                a
-                    display: inline-block
-                    margin-left: 5%
-                    font-size: 1.35rem
-                    line-height: 2rem
-                    color: lighten($ltblue, 10%)
-                    vertical-align: middle
-                    &:hover
-                        color: $ltblue
+            h6
+                margin-top: 20px
+            a
+                color: $yellow
+                &:hover
+                    color: $white
             img
                 border-radius: 100%
                 border: $border
